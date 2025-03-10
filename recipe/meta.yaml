@@ -30,7 +30,7 @@ requirements:
     - pandas
     - pint
     - pip
-    - pyomo >=6.8.2
+    - pyomo >=6.9.1
     - pytest
     - pyyaml
     - scipy
