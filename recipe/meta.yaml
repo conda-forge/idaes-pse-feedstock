@@ -1,5 +1,5 @@
 {% set name = "idaes-pse" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/IDAES/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 61e7a4c206fbaaa0245b587f3aeaff9d2ed20f157905fb1172ef8c8852e51850
+  sha256: 8fa8fe6cea04725d62fdfc97696319488b3c02ac48b2692cd0665ca0bfcf9fa5
 
 build:
   noarch: python
