@@ -6,8 +6,8 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://github.com/IDAES/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 8fa8fe6cea04725d62fdfc97696319488b3c02ac48b2692cd0665ca0bfcf9fa5
+  url: https://pypi.org/packages/source/i/idaes-pse/idaes_pse-{{ version }}.tar.gz
+  sha256: 44110d3865f9d1ba187b26d20baf71ccdac83f7c814c8f16c0b91d124681dd7f
 
 build:
   noarch: python
