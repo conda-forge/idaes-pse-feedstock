@@ -30,11 +30,12 @@ requirements:
     - pandas
     - pint
     - pip
-    - pyomo >=6.9.1
+    - pyomo >=6.10.1
     - pytest
     - pyyaml
     - scipy
     - sympy
+    - pydantic
 
 test:
   requires:
