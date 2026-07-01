@@ -1,13 +1,13 @@
 {% set name = "idaes-pse" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://github.com/IDAES/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 61e7a4c206fbaaa0245b587f3aeaff9d2ed20f157905fb1172ef8c8852e51850
+  url: https://pypi.org/packages/source/i/idaes-pse/idaes_pse-{{ version }}.tar.gz
+  sha256: 44110d3865f9d1ba187b26d20baf71ccdac83f7c814c8f16c0b91d124681dd7f
 
 build:
   noarch: python
@@ -30,11 +30,12 @@ requirements:
     - pandas
     - pint
     - pip
-    - pyomo >=6.9.1
+    - pyomo >=6.10.1
     - pytest
     - pyyaml
     - scipy
     - sympy
+    - pydantic
 
 test:
   requires:
