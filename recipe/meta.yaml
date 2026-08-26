@@ -11,9 +11,11 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - idaes = idaes.commands.base:command_base
+  script_env:
+    - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-cache-dir --ignore-installed"
 
 requirements:
