@@ -1,17 +1,17 @@
 {% set name = "idaes-pse" %}
-{% set version = "2.12.0" %}
+{% set version = "2.13.0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/i/idaes-pse/idaes_pse-{{ version }}.tar.gz
-  sha256: 44110d3865f9d1ba187b26d20baf71ccdac83f7c814c8f16c0b91d124681dd7f
+  url: https://files.pythonhosted.org/packages/source/i/idaes-pse/idaes_pse-{{ version }}.tar.gz
+  sha256: f2a96ea4e8edfd92976f4345c053b027d7df3458bb52cb6d47c7681383bed37f
 
 build:
   noarch: python
-  number: 2
+  number: 0
   entry_points:
     - idaes = idaes.commands.base:command_base
   script_env:
